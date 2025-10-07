@@ -1,0 +1,92 @@
+package com.disney.wdpro.universal_checkout_ui.p459ui;
+
+import com.disney.wdpro.commons.deeplink.DeepLinkFinder;
+import com.disney.wdpro.commons.deeplink.DeepLinkTicketSales;
+
+/* loaded from: classes20.dex */
+public class Constants {
+    public static final String ADMISSION_TICKETS = "admission/tickets";
+    public static final String ANALYTICS_BUNDLE_SYNC_STATUS = "bundleSyncStatus";
+    public static final String ANALYTICS_CONTENT_BUNDLING = "ContentBundling";
+    public static final String ANALYTICS_ENVIRONMENT = "environment";
+    public static final String ANALYTICS_FAILURE_REASON = "failureReason";
+    public static final String ANALYTICS_MOBILE_UNIFIED_CHECKOUT_EVENT = "Mobile_UnifiedCheckout";
+    public static final String ANALYTICS_NEW_VERSION = "newVersion";
+    public static final String ANALYTICS_OLD_VERSION = "oldVersion";
+    public static final String AP_SALES_URL = "/passes";
+    public static final String BUNDLE_SYNC_STATUS_FAILED = "failed";
+    public static final String BUNDLE_SYNC_STATUS_NO_CHANGE = "no change";
+    public static final String BUNDLE_SYNC_STATUS_UPDATED = "updated";
+    public static final String CHASE_APPLY_LANDING_URL = "chase.com/FlexAppWeb/samlLanding";
+    public static final String CHASE_CIGSERVICES = "chase.com/cigservices/disney";
+    public static final String CHASE_CONFIRM_URL = "chase.com/FlexAppWeb/verifyApp";
+    public static final String CHASE_ERROR_URL = "chase.com/FlexAppWeb/error";
+    public static final String CHASE_GATEWAY_PATH = "chase-gateway";
+    public static final String CHASE_LANDING_PAGE_ENTRYPOINT = "chase-landing-page";
+    public static final String CHASE_PREFILL_URL = "chase.com/web/oao/application/card";
+    public static final String CHASE_SESSION_MANAGEMENT_ACTION = "chase.com/FlexAppWeb/SessionManagementAction";
+    public static final String CHECKOUT_BOOKING = "checkout-booking";
+    public static final String CHECKOUT_LANDING_PAGE_ENTRYPOINT = "checkout-landing-page";
+    public static final String DFM_URL = "down-for-maintenance";
+    public static final String DINE_RES = "dine-res";
+    public static final String DINING_PLANS_LINK = "/dining/plans";
+    public static final String DISNEY_LOGIN = "disney.go.com/login";
+    public static final String DLR_DEEP_LINK_BASE_URL = "dlr://";
+    public static final String DLR_DESTINATION_CODE = "DLR";
+    public static final String DLR_DESTINATION_CODE_NAME = "Disneyland Resort";
+    public static final String DLR_LINK_TNP_URL = "/links/tickets-passes";
+    public static final String DLR_MY_PLANS_DEEP_LINK;
+    public static final String DLR_TICKETS_AND_PASSES_DEEP_LINK;
+    public static final String DOMAIN_OVERRIDE_URL = "https://embedded.disney.go.com";
+    public static final String DVIC_LANDING_PAGE_ENTRYPOINT = "dvic-landing-page";
+    public static final String EMBEDDED_CHECKOUT_BOOKING_URL = "https://embedded.disney.go.com/checkout-booking";
+    public static final String ENCHANTING_EXTRAS_COLLECTION = "enchanting-extras-collection";
+    public static final String ERROR_CODE_PARAM = "error_code=";
+    public static final String ERROR_CODE_UNDERAGE = "129";
+    public static final String GUEST_AUTH_REFRESH_TOKEN_TYPE = "com.disney.android.guest.refresh";
+    public static final String GUEST_AUTH_TOKEN_TYPE = "com.disney.android.guest";
+    public static final String HTTP = "http://";
+    public static final String HTTPS = "https://";
+    public static final String LATEST = "latest";
+    public static final String MDX_MY_PLANS_DEEP_LINK;
+    public static final String MDX_TICKETS_AND_PASSES_DEEP_LINK;
+    public static final String MODS_HUB_URL = "mods-start-over";
+    public static final String MODS_URL = "trip/my-vacation/modify-tickets/change-guests";
+    public static final String MY_PLANS_LINK = "/plan";
+    public static final String PASSES_BLOCKOUT_DATES = "/passes/blockout-dates";
+    public static final String PHOTOPASS_LIST_LINK = "tickets/photopass-list";
+    public static final String PRODUCTION = "production";
+    public static final String QUEUE_IT_NET_WAITING_ROOM_URL = "queue-it.net";
+    public static final String QUEUE_IT_WAITING_ROOM_URL = "queue.disneyparks";
+    public static final String SECURE_CHECKOUT = "secure-checkout";
+    public static final String SITE_ID_PARAM = "SiteId=";
+    public static final String SPACE = " ";
+    public static final String STAGE = "stage";
+    public static final String TEL_CONSTANT = "tel:";
+    public static final String TICKETS_AND_PASSES_LINK = "tickets/my-ticket-list";
+    public static final String TICKET_SALES_URL = "admission/tickets/theme-parks";
+    public static final String TIME_MACHINE_FORMAT = "yyyy-MM-dd'T'HH:mm:ss'Z'";
+    public static final String USER_AUTHENTICATION_ERROR_MESSAGE = "There was an issue with authentication";
+    public static final String USE_ORION_HELP_PHONE_NUMBER = "ORION_HELP_PHONE";
+    public static final String VALID_CHASE_URLS = "chase-gateway|chase.com/FlexAppWeb/verifyApp|chase.com/FlexAppWeb/samlLanding|chase.com/cigservices/disney|visa-card|chase.com/FlexAppWeb/SessionManagementAction|chase.com/FlexAppWeb/error|chase.com/web/oao/application/card";
+    public static final String VISA_CARD_PATH = "visa-card";
+    public static final String WDW_DEEP_LINK_BASE_URL = "mdx://";
+    public static final String WDW_DESTINATION_CODE = "WDW";
+    public static final String WDW_DESTINATION_CODE_NAME = "Walt Disney World";
+    public static final String WDW_LINK_TNP_URL = "/link/tickets-passes";
+
+    static {
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append(DLR_DEEP_LINK_BASE_URL);
+        DeepLinkFinder deepLinkFinder = DeepLinkFinder.MY_PLANS;
+        sb2.append(deepLinkFinder.getLink());
+        DLR_MY_PLANS_DEEP_LINK = sb2.toString();
+        MDX_MY_PLANS_DEEP_LINK = WDW_DEEP_LINK_BASE_URL + deepLinkFinder.getLink();
+        StringBuilder sb3 = new StringBuilder();
+        sb3.append(DLR_DEEP_LINK_BASE_URL);
+        DeepLinkTicketSales deepLinkTicketSales = DeepLinkTicketSales.MY_TICKETS;
+        sb3.append(deepLinkTicketSales.getLink());
+        DLR_TICKETS_AND_PASSES_DEEP_LINK = sb3.toString();
+        MDX_TICKETS_AND_PASSES_DEEP_LINK = WDW_DEEP_LINK_BASE_URL + deepLinkTicketSales.getLink();
+    }
+}
