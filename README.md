@@ -1,0 +1,1 @@
+Created for anyone who wants to use Gemini or a similar AI to read the project so they can get an understanding of the app's functions. Also, all credit goes to the Walt Disney Company and any other developers, etc. If anyone from Disney wants to take it down, contact me at GhostyTongue@gmail.com. Enjoy, researchers, or anyone.
